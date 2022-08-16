@@ -1,4 +1,5 @@
 import React from 'react'
+import { Navigate, Link } from "react-router-dom";
 
 const Navigation = () => {
   return (
@@ -14,9 +15,9 @@ const Navigation = () => {
 					<div className = "col-xs-11 col-sm-11 col-md-11 col-lg-11 text-right">
 						<div className = "primary-nav">
 							<ul>
-								<li><a href = "index.html">Home</a></li>
-								<li><a href = "portfolio.html">Portfolio</a></li>
-								<li><a href = "contact.html">Contact</a></li>
+								<Link to='/'><li><a>Home</a></li></Link>
+								<Link to='/portfolio'><li><a href = "portfolio.html">Portfolio</a></li></Link>
+								<Link to='/contact'><li><a href = "contact.html">Contact</a></li></Link>
 							</ul>
 						</div>
 					</div>
